@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="with=device-width, intiasl-scale=1.0">
+    <title>community cricket website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="cricket.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="cricket.html">HOME</a></li>
+                    <li><a href="contact.html">ABOUT</a></li>
+                    <li><a href="https://www.cricbuzz.com/cricket-match/live-scores">UPDATES</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Telugu_people">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    <div class="text-box">
+        <h1>Catch the Latest Community Cricket<br> Updates Here!</h1>
+        <p>Stay updated with the latest community cricket posts and news on our website!</p>
+        <a href="https://www.cricbuzz.com/cricket-match/live-scores" class="hero-btn">Get updates for cricket Here!</a>
+    </div>
+    </section>
+    <!------course------->
+    <section class="course">
+        <h1>courses offer</h1>
+        <p>updates to be released</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Enhance Your Cricket Skills with Our Community Courses</h3>
+                <p>Our cricket community offers a range of courses designed to help players of all levels improve their skills and knowledge of the game. Whether you're a beginner looking to learn the basics or an experienced player aiming to refine your technique, our courses provide comprehensive training to meet your needs.</p>
+            </div>
+            <div class="course-col">
+                <h3>Beginner's Cricket Course</h3>
+                <img src="images/children.png" alt="group of chidren playing cricket">
+                <p>Our beginner's course is perfect for those new to cricket. It covers the fundamental skills, including batting, bowling, fielding, and basic game rules. Through interactive sessions and practical exercises, participants will gain a solid foundation to start their cricket journey confidently.</p>
+            </div>
+            <div class="course-col">
+                <h3>Intermediate Cricket Training</h3>
+                <p>For players with some experience, our intermediate course focuses on enhancing existing skills and introducing advanced techniques. The curriculum includes in-depth coaching on various aspects of the game, such as strategic batting, spin and pace bowling, and advanced fielding drills. Participants will also learn about game tactics and mental conditioning to improve their on-field performance.</p>
+            </div>
+            <div class="course-col">
+                <h3>Advanced Cricket Masterclass</h3>
+                <img src="images/sports_balls.png" alt="multiple balls picture">
+                <p>Our advanced course is tailored for seasoned players aiming to reach professional standards. This masterclass offers specialized training from expert coaches, covering high-level strategies, performance analysis, and fitness regimes. Participants will engage in intensive practice sessions, match simulations, and receive personalized feedback to fine-tune their skills and elevate their game.</p>
+            </div>
+            <div class="course-col">
+                <h3>Junior Cricket Development Program</h3>
+                <img src="images/boys.png">
+                <p>Designed for young aspiring cricketers, our junior development program nurtures talent from an early age. The program combines fun, educational activities with skill development to foster a love for the game. Young players will learn the basics, participate in friendly matches, and develop teamwork and sportsmanship.</p>
+            </div>
+            <div class="course-col">
+                <h3>Women’s Cricket Empowerment Course</h3>
+                <img src="images/girls empowerment.jpg">
+                <p>Our women’s cricket course is dedicated to promoting female participation in the sport. It provides a supportive environment for women of all skill levels to learn and improve. The course includes training sessions tailored to women's cricket, focusing on skill development, fitness, and building confidence on the field.</p>
+        
+            </div>
+        </div>
+    </section>
+    <section class="community">
+        <h1>Cricket Community</h1>
+        <p>Join our cricket community courses to develop your skills, connect with fellow enthusiasts, and take your love for cricket to the next level!</p>
+    </section>
+    <!------registration------>
+    <div class="registration">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div> 
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+</body>
+</html>
